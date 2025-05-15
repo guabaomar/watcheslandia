@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-
+import { Search } from 'lucide-react'
 
 
 
@@ -13,16 +13,19 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
 
 
-        <Link href="/">Watches</Link>
+        <Link   className="hidden md:inline-block text-lg font-semibold"
+        
+        href="/">Watches</Link>
 
-           <div>
+             <div className="relative max-w-[300px] md:w-[400px]">
                 
-
-                <div>
+             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                           
+                <Search className="w-4 h-4"  />
+
                 </div>
 
-                <input type="text" placeholder='Search'/>
+                <input  className="h-[36px] relative pl-10 border-[1px] border-black/[0.7] text-sm rounded-[8px] w-full py-2 px-3 focus:outline-none bg-transparent" type="text" placeholder='Search'/>
 
            </div>
 

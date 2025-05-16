@@ -7,7 +7,7 @@ import { Search } from 'lucide-react'
 
 const Navbar = () => {
   return (
-
+     
     <nav className="px-4 md:px-12 py-4 md:py-6 bg-white text-black">
 
         <div className="flex justify-between items-center">

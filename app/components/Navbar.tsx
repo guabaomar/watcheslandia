@@ -15,7 +15,7 @@ const Navbar = () => {
 
         <Link   className="hidden md:inline-block text-lg font-semibold"
         
-        href="/">Watches</Link>
+        href="/">WatchLandia</Link>
 
              <div className="relative max-w-[300px] md:w-[400px]">
                 
@@ -35,7 +35,7 @@ const Navbar = () => {
            <Link href="/add-product">
            
            
-              <button>
+              <button className="bg-[#212529] text-white px-3 py-2 rounded-md cursor-pointer">
 
 
                           Add Product

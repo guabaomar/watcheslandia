@@ -1,7 +1,7 @@
 
 import Hero from "./components/Hero";
 import Productlist from "./components/Productlist";
-import Footer from "./components/Footer";
+
 
 
 export default function Home() {

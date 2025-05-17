@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { Search } from 'lucide-react'
+import { SignedOut, SignedIn } from '@clerk/nextjs'
+import { UserButton } from '@clerk/nextjs'
 
 
 
@@ -32,6 +34,7 @@ const Navbar = () => {
 
 
 
+           <SignedIn>
            <Link href="/add-product">
            
            
@@ -44,9 +47,24 @@ const Navbar = () => {
               </button>
            
            </Link>
+           </SignedIn>
+           
+           <SignedOut>
+           <Link href="/sign-in">
+           
+           
+              <button className="bg-amber-500 text-white px-3 py-2 rounded-md cursor-pointer">
 
+
+                       Sign In
+
+              </button>
            
-           
+           </Link>
+           </SignedOut>
+           <SignedIn>
+              <UserButton />
+            </SignedIn>
 
 
 
